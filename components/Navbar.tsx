@@ -8,7 +8,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full  backdrop-blur supports-[backdrop-filter]:bg-white/5 h-16">
+    <header className="sticky top-0 z-40 w-full  backdrop-blur supports-[backdrop-filter]:bg-white/5 h-16 px-4 lg:px-22">
       <div className="mx-auto  px-8 py-3  flex items-center justify-between ">
         {/* Logo */}
         <div className="flex items-center space-x-3">

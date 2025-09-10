@@ -31,8 +31,8 @@ export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <section className="relative py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative  px-4 lg:px-22 bg-gray-50">
+      <div className="max-w-7xl  py-20 mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center border-l-2 border-r-2">
         {/* Left: Steps */}
         <div className="space-y-10">
           <h2 className="text-4xl font-bold text-gray-900 mb-8">

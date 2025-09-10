@@ -28,21 +28,23 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 bg-gray-50">
-      <h1 className="text-center p-4 font-bold text-3xl mb-6">
-        Trust, Evidence, and Control
-      </h1>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, i) => (
-            <ProductFeatureCard key={i} {...feature} />
-          ))}
+    <section className=" px-4 lg:px-22 bg-gray-50">
+      <div className="py-16  border-l-2 border-r-2">
+        <h1 className="text-center p-4 font-bold text-3xl mb-6">
+          Trust, Evidence, and Control
+        </h1>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, i) => (
+              <ProductFeatureCard key={i} {...feature} />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="pt-9  flex justify-center items-center ">
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">
-          Open Evidence Pack Sample
-        </button>
+        <div className="pt-9  flex justify-center items-center ">
+          <button className="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">
+            Open Evidence Pack Sample
+          </button>
+        </div>
       </div>
     </section>
   );

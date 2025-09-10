@@ -37,26 +37,23 @@ export default function Page() {
   return (
     <main className="">
       <GridLayout>
-
-        {/* <AnimatedGradient className="min-h-screen flex items-center justify-center ">
-          <Nav />
-          <Hero />
-        </AnimatedGradient> */}
-        <AuroraBackground >
-          <Nav />
-          <Hero />
-         </AuroraBackground >
-        <EstimateRevenue />
-        <ProductFeatureCard />
-        <HowItWorks />
-        <ProgressSteps />
-        <EnterpriseSection />
-        <FeaturesSection />
-        <BillingSection />
-        <FAQSection />
-        <ContactSection />
-        <HomepageHeroGradient />
-        <Footer />
+        <>
+          <AuroraBackground>
+            <Nav />
+            <Hero />
+          </AuroraBackground>
+          <EstimateRevenue />
+          <ProductFeatureCard />
+          <HowItWorks />
+          <ProgressSteps />
+          <EnterpriseSection />
+          <FeaturesSection />
+          <BillingSection />
+          <FAQSection />
+          <ContactSection />
+          
+          <Footer />
+        </>
       </GridLayout>
     </main>
   );

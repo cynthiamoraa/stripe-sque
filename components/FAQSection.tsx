@@ -37,8 +37,8 @@ const faqs: FAQItem[] = [
 
 export default function FAQPage() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="px-4 lg:px-22 bg-gray-50">
+      <div className="max-w-full mx-auto  py-16 sm:px-6 lg:px-8 border-l-2 border-r-2">
         <h1 className="text-3xl font-bold text-gray-900 text-center">
           Frequently Asked Questions
         </h1>

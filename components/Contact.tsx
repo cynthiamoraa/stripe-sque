@@ -1,7 +1,7 @@
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className=" px-4 lg:px-22 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4  py-20 sm:px-6 lg:px-8 text-center border-l-2 border-r-2">
         {/* Text */}
         <h1 className="text-3xl font-bold text-gray-900">
           Ready to Stop Revenue Leaks?

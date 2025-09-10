@@ -2,8 +2,8 @@ import BillingPlans from "./BillingPlans";
 
 export default function BillingSection() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className=" px-4 lg:px-22 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-20 border-l-2 border-r-2">
         <h1 className="text-3xl text-center mb-8 font-bold text-gray-900">
           Simple Plans
         </h1>
