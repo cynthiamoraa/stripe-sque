@@ -44,10 +44,10 @@ export default function ProgressSteps() {
         </div>
 
         <div className="p-6 flex flex-row ">
-          <div className="w-1/4 p-4">
+          <div className="w-1/4  hidden lg:flex p-4">
             <ProgressBar steps={steps} progress={progress} />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 shadow-2xl">
             <video
               ref={videoRef}
               src="https://storage.googleapis.com/sque_storage/videos/Screen%20Recording%202025-08-26%20at%209.28.54%E2%80%AFAM.mov"
@@ -56,7 +56,7 @@ export default function ProgressSteps() {
               muted
               playsInline
               preload="auto"
-              className="w-full h-full object-cover border-muted-foreground object-center bg-white opacity-90 rounded-xl"
+              className="w-full h-full object-cover border-muted-foreground object-center bg-gray-50 opacity-90 rounded-lg"
             />
           </div>
         </div>

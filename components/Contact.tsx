@@ -1,12 +1,22 @@
+import { WavyBackground } from "@/components/ui/shadcn-io/wavy-background";
 export default function ContactSection() {
   return (
-    <section className=" px-4 lg:px-22 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4  py-20 sm:px-6 lg:px-8 text-center border-l-2 border-r-2">
+    <WavyBackground
+      backgroundFill="#f9fafb"
+      colors={["#38bdf8", "#818cf8", "#c084fc", "#e879f9"]}
+      waveWidth={50}
+      blur={10}
+      speed="fast"
+      waveOpacity={0.5}
+      containerClassName="h-full w-full"
+      className="flex items-center p-20 w-full justify-center px-4 lg:px-22 "
+    >
+      <div className="max-w-7xl py-16 mx-auto sm:px-6 lg:px-8 text-center border-gray-600 border-l-2 border-r-2 w-full ">
         {/* Text */}
-        <h1 className="text-3xl font-bold text-gray-900">
+        <h1 className="text-3xl font-bold text-gray-700">
           Ready to Stop Revenue Leaks?
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-gray-700">
           Create an account instantly to get started or contact us
         </p>
 
@@ -20,6 +30,6 @@ export default function ContactSection() {
           </button>
         </div>
       </div>
-    </section>
+    </WavyBackground>
   );
 }

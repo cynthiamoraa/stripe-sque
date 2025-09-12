@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Logo from "../public/Sque_icon_universal.svg";
+
 
 function Footer() {
   const footerLinks = {
@@ -13,19 +15,13 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-gray-50 px-4 lg:px-22 text-gray-500 border-t border-white/10">
+    <footer className="bg-gray-50 px-4 lg:px-22 text-gray-500 ">
       <div className=" border-l-2 border-r-2  py-16">
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center gap-2">
-              <Image
-                src="/images/sque-logo.png"
-                alt="Sque Logo"
-                width={40}
-                height={40}
-                className="rounded"
-              />
+              <Image src={Logo} alt="Sque Logo" width={34} height={36} />
               <span className="text-xl font-bold">Sque</span>
             </div>
             <p className="text-black/70 max-w-md">
@@ -53,7 +49,7 @@ function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mx-auto max-w-7xl px-4 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mx-auto max-w-7xl px-4 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-black/60 text-sm">
             © 2025 Sque AI. All rights reserved.
           </p>

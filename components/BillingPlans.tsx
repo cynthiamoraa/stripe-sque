@@ -17,7 +17,7 @@ function BillingCard({
   title,
   subtitle,
   price,
-  suffix,
+  
   badge,
   features,
   cta,
@@ -44,12 +44,8 @@ function BillingCard({
       )}
 
       {/* Price */}
-      <div className="mt-3 flex items-baseline gap-1">
-        <span className="text-2xl font-extrabold text-gray-900">{price}</span>
-        {suffix && (
-          <span className="text-xs font-semibold text-gray-600">{suffix}</span>
-        )}
-      </div>
+      <div className="mt-3 text-2xl font-extrabold text-gray-900">{price}</div>
+
       {/* CTA */}
       <button className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-700 transition">
         {cta}
@@ -82,8 +78,7 @@ export default function BillingPlans() {
       <BillingCard
         title="Starter"
         subtitle="(annual)"
-        price="$79"
-        suffix="/user/mo"
+        price="$79/user/mo"
         badge="Early Access"
         cta="Start Free Trial"
         features={[
@@ -97,8 +92,7 @@ export default function BillingPlans() {
       <BillingCard
         title="Pro"
         subtitle="(annual)"
-        price="$149"
-        suffix="/user/mo"
+        price="$149/user/mo"
         badge="Early Access"
         cta="Start Free Trial"
         highlight

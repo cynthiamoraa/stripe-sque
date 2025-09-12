@@ -21,6 +21,9 @@ import ProgressSteps from "@/components/ProgressSteps";
 import AnimatedGradient from "@/components/AnimatedGradient";
 import GridLayout from "@/components/GridLayout";
 import { AuroraBackground } from "@/components/ui/shadcn-io/aurora-background";
+import MissionControl from "@/components/MissionControl";
+import BuiltFor from "@/components/BuiltFor";
+
 function GradientBadge() {
   return (
     <span className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm ring-1 ring-white/15 bg-white/5 backdrop-blur">
@@ -36,25 +39,22 @@ function GradientBadge() {
 export default function Page() {
   return (
     <main className="">
-      <GridLayout>
-        <>
-          <AuroraBackground>
-            <Nav />
-            <Hero />
-          </AuroraBackground>
-          <EstimateRevenue />
-          <ProductFeatureCard />
-          <HowItWorks />
-          <ProgressSteps />
-          <EnterpriseSection />
-          <FeaturesSection />
-          <BillingSection />
-          <FAQSection />
-          <ContactSection />
-          
-          <Footer />
-        </>
-      </GridLayout>
+      <AuroraBackground>
+        <Nav />
+        <Hero />
+      </AuroraBackground>
+      <EstimateRevenue />
+      <ProductFeatureCard />
+      <MissionControl />
+      <ProgressSteps />
+      <BuiltFor/>
+      <HowItWorks />
+      <EnterpriseSection />
+      <FeaturesSection />
+      <BillingSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }

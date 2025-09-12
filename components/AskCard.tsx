@@ -59,7 +59,7 @@ export default function AskCard() {
       <div className="relative z-10 flex flex-col flex-1">
         {/* Badge */}
         <div className="flex items-center gap-3 mb-6">
-          <Sparkles className="w-5 h-5 text-pink-500 animate-pulse" />
+          <Sparkles className="w-5 h-5 text-purple-500 animate-pulse" />
           <span className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
             Productivity
           </span>
@@ -100,7 +100,7 @@ export default function AskCard() {
 
         {/* CTA at bottom */}
         <div className="mt-auto pt-6">
-          <button className="w-full px-6 py-3 bg-pink-500 text-white rounded-xl font-medium shadow hover:bg-pink-600 transition">
+          <button className="w-full px-6 py-3 bg-purple-500 text-white rounded-xl font-medium shadow hover:bg-pink-600 transition">
             Explore productivity
           </button>
         </div>

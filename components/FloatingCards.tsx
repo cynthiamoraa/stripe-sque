@@ -93,7 +93,7 @@ export default function FloatingCards() {
           <div
             key={idx}
             className={clsx(
-              "absolute w-80 cursor-pointer transition-all duration-3000 ease-in-out bg-white hover:shadow-2xl group",
+              "absolute w-80 cursor-pointer transition-all duration-2000 ease-linear bg-white hover:shadow-2xl group",
               idx === activeIndex
                 ? "opacity-100 z-20 scale-100"
                 : "opacity-0 z-10 scale-95 translate-y-8"
@@ -104,62 +104,64 @@ export default function FloatingCards() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <div className="bg-background dark:bg-card border border-border shadow-md rounded-lg p-5 w-80 mx-auto flex flex-col gap-4 h-96 justify-center">
-              {/* Company + Description */}
-              <div className="flex flex-col gap-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="font-medium text-foreground !text-base">
-                    {card.company}
+            <div className="bg-blue-200 rounded-lg p-2">
+              <div className="bg-white dark:bg-card border border-border shadow-md rounded-lg p-5 w-80 mx-auto flex flex-col gap-4 h-96 justify-center">
+                {/* Company + Description */}
+                <div className="flex flex-col gap-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="font-medium text-foreground !text-base">
+                      {card.company}
+                    </span>
+                  </div>
+                  <div className="flex flex-col text-start">
+                    <span className="text-muted-foreground !text-xs">
+                      {card.description}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Tags */}
+                <div className="flex mt-1 flex-col gap-2">
+                  {card.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-muted-foreground !text-xs py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="border-t border-dashed border-border my-2" />
+
+                {/* Time + Rate */}
+                <div className="flex flex-col gap-1 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Time</span>
+                    <span className="text-foreground">{card.time}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Rate</span>
+                    <span className="text-foreground">{card.rate}</span>
+                  </div>
+                </div>
+
+                <div className="border-t border-dashed border-border my-2" />
+
+                {/* Total */}
+                <div className="flex justify-between items-center">
+                  <span className="text-base font-semibold text-muted-foreground">
+                    Total
+                  </span>
+                  <span className="text-xl font-bold text-foreground">
+                    {card.total}
                   </span>
                 </div>
-                <div className="flex flex-col text-start">
-                  <span className="text-muted-foreground !text-xs">
-                    {card.description}
-                  </span>
+
+                {/* Source */}
+                <div className="text-xs text-muted-foreground/60 text-center mt-2">
+                  Source: {card.source}
                 </div>
-              </div>
-
-              {/* Tags */}
-              <div className="flex mt-1 flex-col gap-2">
-                {card.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-muted-foreground !text-xs py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <div className="border-t border-dashed border-border my-2" />
-
-              {/* Time + Rate */}
-              <div className="flex flex-col gap-1 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Time</span>
-                  <span className="text-foreground">{card.time}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Rate</span>
-                  <span className="text-foreground">{card.rate}</span>
-                </div>
-              </div>
-
-              <div className="border-t border-dashed border-border my-2" />
-
-              {/* Total */}
-              <div className="flex justify-between items-center">
-                <span className="text-base font-semibold text-muted-foreground">
-                  Total
-                </span>
-                <span className="text-xl font-bold text-foreground">
-                  {card.total}
-                </span>
-              </div>
-
-              {/* Source */}
-              <div className="text-xs text-muted-foreground/60 text-center mt-2">
-                Source: {card.source}
               </div>
             </div>
           </div>

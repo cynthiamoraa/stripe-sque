@@ -9,9 +9,9 @@ function Nav() {
 
   return (
     <header className="sticky top-0 z-40 w-full  backdrop-blur supports-[backdrop-filter]:bg-white/5 h-16 px-4 lg:px-22">
-      <div className="mx-auto  px-8 py-3  flex items-center justify-between ">
+      <div className="mx-auto px-2 md:px-8 py-3  flex items-center justify-between  lg:justify-start ">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 pr-8">
           <Image src={Logo} alt="Sque Logo" width={44} height={38} />
           <Link href="#home" className="font-semibold tracking-tight text-lg">
             Sque
@@ -19,8 +19,9 @@ function Nav() {
         </div>
 
         {/* Desktop menu */}
-        <nav className="hidden lg:flex gap-8 items-center justify-between">
-          <div className="flex gap-8 items-center justify-between">
+        <nav className="hidden lg:flex items-center justify-between w-full">
+          {/* Left side links */}
+          <div className="flex gap-8 items-center">
             <a href="#features" className="hover:text-white">
               Features
             </a>
@@ -34,6 +35,8 @@ function Nav() {
               Contact
             </a>
           </div>
+
+          {/* Right side button */}
           <div>
             <Link
               href="#cta"

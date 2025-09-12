@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const steps = [
@@ -9,7 +9,7 @@ const steps = [
     title: "Step 1 — Find Work You Already Did",
     description:
       "Connect Google/Microsoft. Sque surfaces billable work from email, calendar, files, and call notes — with clear narratives.",
-    visual: "🔍", // Placeholder, later replace with animation (e.g. Lottie, SVG, canvas)
+    visual: "🔍",
   },
   {
     id: 2,
@@ -29,50 +29,61 @@ const steps = [
 
 export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    stepRefs.current.forEach((ref, index) => {
+      if (!ref) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveStep(steps[index].id);
+          }
+        },
+        { threshold: 0.5 }
+      );
+
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
 
   return (
-    <section className="relative  px-4 lg:px-22 bg-gray-50">
-      <div className="max-w-7xl  py-20 mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center border-l-2 border-r-2">
-        {/* Left: Steps */}
-        <div className="space-y-10">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+    <section className="relative px-4 lg:px-22 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200  ">
+      <section className=" text-white py-20 px-2">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Section Header */}
+
+          <h2 className="text-3xl  md:text-4xl font-bold mb-4">
             How Sque Works
           </h2>
+          <p className="text-white/80 mb-20 max-w-2xl mx-auto">
+            Refine, Adjust, Perfect: Craft your ideal workflow output with
+            intuitive steps. Achieve clarity, stability, and efficiency—tailored
+            precisely to your needs.
+          </p>
 
-          {steps.map((step) => (
-            <div
-              key={step.id}
-              className={`p-6 rounded-2xl cursor-pointer transition ${
-                activeStep === step.id
-                  ? "bg-white shadow-lg border border-blue-200"
-                  : "hover:bg-white/60"
-              }`}
-              onMouseEnter={() => setActiveStep(step.id)}
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 mt-2">{step.description}</p>
-            </div>
-          ))}
+          {/* Steps */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {steps.map((step) => (
+              <div
+                key={step.id}
+                className="bg-white/20 backdrop-blur-lg p-6 rounded-2xl shadow-lg  text-left flex flex-col"
+              >
+                <h3 className="font-semibold text-xl mb-2">{step.title}</h3>
+                <p className="text-white/80">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* Right: Visual/Animation */}
-        <div className="relative h-[400px] flex items-center justify-center bg-white rounded-2xl shadow-lg border">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeStep}
-              initial={{ opacity: 0, y: 20, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -20, scale: 0.9 }}
-              transition={{ duration: 0.4 }}
-              className="text-7xl"
-            >
-              {steps.find((s) => s.id === activeStep)?.visual}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
+      </section>
     </section>
   );
 }
