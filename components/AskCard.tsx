@@ -100,7 +100,7 @@ export default function AskCard() {
 
         {/* CTA at bottom */}
         <div className="mt-auto pt-6">
-          <button className="w-full px-6 py-3 bg-purple-500 text-white rounded-xl font-medium shadow hover:bg-pink-600 transition">
+          <button className="w-full px-6 py-3 bg-purple-500 text-white rounded-xl font-medium shadow hover:bg-purple-600 transition">
             Explore productivity
           </button>
         </div>

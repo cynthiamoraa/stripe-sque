@@ -46,9 +46,10 @@ export default function Page() {
       <EstimateRevenue />
       <ProductFeatureCard />
       <MissionControl />
-      <ProgressSteps />
-      <BuiltFor/>
       <HowItWorks />
+      <ProgressSteps />
+      <BuiltFor />
+
       <EnterpriseSection />
       <FeaturesSection />
       <BillingSection />

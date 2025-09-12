@@ -87,8 +87,11 @@ export default function MissionControl() {
   }, []);
 
   return (
-    <section className="relative px-4 lg:px-22 bg-gray-50  ">
-      <section className="border-l-2 border-r-2 bg-gray-50 text-black py-20 px-6">
+    <section
+      className="relative px-4 lg:px-22 py-30 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200 "
+      style={{ clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 100%)" }}
+    >
+      <section className="border-l-2 border-r-2  text-black py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
           {/* Section Header */}
 
@@ -101,7 +104,7 @@ export default function MissionControl() {
             Days-to-cash: −7 to −12.
           </p>
         </div>
-        <div className="max-w-5xl mx-auto text-center shadow-2xl shadow-purple-300 bg-gray-50 rounded-md p-6">
+        <div className="max-w-5xl mx-auto p-12 text-center shadow-2xl shadow-purple-300 bg-gray-50 rounded-md ">
           {/* Section Header */}
 
           <h2 className="text-3xl  md:text-4xl font-bold mb-4">

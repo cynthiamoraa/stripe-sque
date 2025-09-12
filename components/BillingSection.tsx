@@ -4,9 +4,7 @@ export default function BillingSection() {
   return (
     <div className="bg-gray-50 ">
       <section
-        className=" px-4 lg:px-22 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200  "
-        style={{ clipPath: "polygon(0 0, 100% 0, 100% 95%, 0 100%)" }}
-      >
+        className=" px-4 lg:px-22 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-20 border-r border-l pb-40 ">
           <h1 className="text-3xl text-center mb-8 font-bold text-gray-900">
             Simple Plans

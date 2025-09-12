@@ -28,7 +28,10 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className=" px-4 lg:px-22 bg-gray-50">
+    <section
+      className=" px-4 lg:px-22 py-20 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200  "
+      style={{ clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)" }}
+    >
       <div className="py-16  border-l-2 border-r-2">
         <h1 className="text-center p-4 font-bold text-3xl mb-6">
           Trust, Evidence, and Control

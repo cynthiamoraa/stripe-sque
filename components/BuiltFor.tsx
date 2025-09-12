@@ -78,7 +78,7 @@ export default function PracticeSection() {
   const [activeTab, setActiveTab] = useState("Practice");
 
   return (
-    <section className=" relative px-4 lg:px-22 py-16 bg-white">
+    <section className=" relative px-4 lg:px-22 py-26 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <header className="text-center  mb-18 ">
@@ -124,7 +124,7 @@ export default function PracticeSection() {
         {/* Dynamic Content */}
         <div className="grid gap-6 md:grid-cols-3">
           {/* Pain */}
-          <article className="bg-white border-t-10 border-t-blue-700 rounded-2xl p-6 py-18 shadow-sm">
+          <article className="bg-white border-t-10 border-t-blue-600 rounded-2xl p-6 py-18 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">
               Your pain
             </h4>
@@ -134,7 +134,7 @@ export default function PracticeSection() {
           </article>
 
           {/* What Sque does */}
-          <article className="bg-white border border-t-10 border-slate-100 rounded-2xl p-6 py-18 shadow-sm">
+          <article className="bg-white  border-t-10 border-t-blue-600  rounded-2xl p-6 py-18 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">
               What Sque does
             </h4>
@@ -146,7 +146,7 @@ export default function PracticeSection() {
           </article>
 
           {/* Proof */}
-          <article className="bg-white border border-t-10 border-slate-100 rounded-2xl p-6 py-18 shadow-sm">
+          <article className="bg-white  border-t-10 border-t-blue-600  rounded-2xl p-6 py-18 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">Proof</h4>
             <p className="text-sm text-slate-700 leading-relaxed">
               {tabContent[activeTab].proof}
