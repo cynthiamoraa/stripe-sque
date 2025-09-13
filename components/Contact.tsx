@@ -8,10 +8,11 @@ export default function ContactSection() {
       blur={10}
       speed="fast"
       waveOpacity={0.5}
+      id="contact"
       containerClassName="h-full w-full"
       className="flex items-center p-20 w-full justify-center px-4 lg:px-22 "
     >
-      <div className="max-w-7xl py-16 mx-auto sm:px-6 lg:px-8 text-center border-gray-600 border-l-2 border-r-2 w-full ">
+      <div className="max-w-7xl py-16 mx-auto px-4 lg:px-8 text-center border-gray-600  w-full ">
         {/* Text */}
         <h1 className="text-3xl font-bold text-gray-700">
           Ready to Stop Revenue Leaks?
@@ -22,10 +23,10 @@ export default function ContactSection() {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 h-12 bg-blue-600 text-white rounded-xl font-medium shadow hover:bg-blue-700 transition">
+          <button className="px-6 h-12 bg-blue-600 text-white rounded-xl font-[600] md:font-medium shadow hover:bg-blue-700 transition">
             Start Free Trial
           </button>
-          <button className="px-6 h-12 bg-white text-blue-600 border border-blue-600 rounded-xl font-medium shadow hover:bg-blue-50 transition">
+          <button className="px-6 h-12 bg-white text-blue-600 border border-blue-600 rounded-xl font-[600] md:font-medium shadow hover:bg-blue-50 transition">
             Book Strategy Call
           </button>
         </div>

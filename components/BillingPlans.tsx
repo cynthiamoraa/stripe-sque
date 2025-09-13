@@ -25,9 +25,12 @@ function BillingCard({
 }: BillingCardProps) {
   return (
     <div
-      className={`relative flex flex-col rounded-2xl border p-6 shadow-sm overflow-hidden transition hover:shadow-md ${
-        highlight ? "border-blue-500 bg-blue-50" : "border-gray-200 bg-white"
-      }`}
+      className={`relative flex flex-col rounded-2xl border p-6 shadow-sm overflow-hidden transition-all duration-300 cursor-pointer
+        ${
+          highlight
+            ? "border-blue-500 bg-blue-50 hover:shadow-lg hover:border-blue-600"
+            : "border-gray-200 bg-white hover:shadow-lg hover:border-blue-400 hover:bg-blue-50/40"
+        }`}
     >
       {/* Title + Badge */}
       <div className="flex items-center gap-2">
@@ -47,7 +50,7 @@ function BillingCard({
       <div className="mt-3 text-2xl font-extrabold text-gray-900">{price}</div>
 
       {/* CTA */}
-      <button className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-700 transition">
+      <button className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-2 text-white font-[600] md:font-medium hover:bg-blue-700 transition">
         {cta}
       </button>
 
@@ -95,7 +98,6 @@ export default function BillingPlans() {
         price="$149/user/mo"
         badge="Early Access"
         cta="Start Free Trial"
-        highlight
         features={[
           "200 Automation Actions",
           "Approvals & Disputes",

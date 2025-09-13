@@ -36,10 +36,9 @@ export default function EnterpriseFeature() {
 
   return (
     <section
-      className=" px-4 lg:px-22  py-20 bg-gradient-to-tr from-blue-300 via-purple-300 to-fuchsia-200 "
-      style={{ clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 100%)" }}
+      className=" px-4 lg:px-22  py-20 bg-gradient-to-tr from-blue-300 via-purple-300 to-fuchsia-200 clip-section-top"
     >
-      <div className="relative w-full  mx-auto pt-18  overflow-hidden p-8 border-l-2 border-r-2">
+      <div className="relative w-full  mx-auto pt-18  overflow-hidden p-8 ">
         {/* Card Content */}
         <h1 className="text-center text-3xl p-6 mb-8 font-bold">
           Works With Your Stack

@@ -22,16 +22,16 @@ function Nav() {
         <nav className="hidden lg:flex items-center justify-between w-full">
           {/* Left side links */}
           <div className="flex gap-8 items-center">
-            <a href="#features" className="hover:text-white">
+            <a href="#features" className="hover:text-gray-700">
               Features
             </a>
-            <a href="#pricing" className="hover:text-white">
+            <a href="#pricing" className="hover:text-gray-700">
               Pricing
             </a>
-            <a href="#faqs" className="hover:text-white">
+            <a href="#faqs" className="hover:text-gray-700">
               FAQs
             </a>
-            <a href="#contact" className="hover:text-white">
+            <a href="#contact" className="hover:text-gray-700">
               Contact
             </a>
           </div>
@@ -39,8 +39,14 @@ function Nav() {
           {/* Right side button */}
           <div>
             <Link
-              href="#cta"
-              className="ml-4 rounded-xl bg-white text-gray-900 px-4 py-2 font-medium hover:opacity-90 transition"
+              href="#"
+              className="ml-4   text-gray-900 px-4 py-2 font-medium hover:opacity-90 transition"
+            >
+              Login
+            </Link>
+            <Link
+              href="#"
+              className="ml-4 rounded-2xl bg-white text-blue-700 px-4 py-2 font-medium hover:opacity-90 transition"
             >
               Get started
             </Link>
@@ -90,8 +96,8 @@ function Nav() {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <nav className="lg:hidden flex flex-col gap-6 px-8 py-6 bg-black text-white">
-          <a href="#features" onClick={() => setIsOpen(false)}>
+        <nav className="lg:hidden min-h-screen flex flex-col gap-6 px-8 py-6 bg-gray-50  text-gray-700">
+          <a href="features" onClick={() => setIsOpen(false)}>
             Features
           </a>
           <a href="#pricing" onClick={() => setIsOpen(false)}>
@@ -103,13 +109,21 @@ function Nav() {
           <a href="#contact" onClick={() => setIsOpen(false)}>
             Contact
           </a>
-          <Link
-            href="#cta"
-            onClick={() => setIsOpen(false)}
-            className="rounded-xl bg-white text-gray-900 px-4 py-2 font-medium hover:opacity-90 transition"
-          >
-            Get started
-          </Link>
+          <div className="flex flex-col  bottom-0">
+            <Link
+              href="#"
+              className=" bg-white w-fit rounded-xl mb-4 text-blue-700 px-4 py-2 ffont-[500] md:font-bold  hover:opacity-90 transition"
+            >
+              Login
+            </Link>
+            <Link
+              href="#"
+              onClick={() => setIsOpen(false)}
+              className="rounded-xl w-fit  bg-blue-500  text-white px-4 py-2 font-[500] md:font-bold hover:opacity-90 transition"
+            >
+              Get started
+            </Link>
+          </div>
         </nav>
       )}
     </header>

@@ -97,7 +97,7 @@ export default function SecurityCard() {
 
         {/* CTA */}
         <div className="pt-4">
-          <button className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium shadow hover:bg-indigo-700 transition">
+          <button className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-[600] md:font-medium shadow hover:bg-indigo-700 transition">
             Learn more about Security
           </button>
         </div>

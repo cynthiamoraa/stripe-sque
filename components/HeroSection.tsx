@@ -18,16 +18,14 @@ function Hero() {
             <h1 className="text-black font-sans font-normal text-2xl">
               Sque is the Legal Revenue & Operating System — it captures work
               automatically and runs billing as your system of record.
-              <h1 className="mt-6">
-                First invoice in 48 hours • Audit-ready proof in 14 days • 0
-                rejected e-bills
-              </h1>
+            </h1>
+            <h1 className="mt-6">
+              First invoice in 48 hours • Audit-ready proof in 14 days • 0
+              rejected e-bills
             </h1>
           </div>
           <footer className="p-3 block md:flex justify-between gap-4">
-            <button
-              className=" h-16  rounded-xl  px-4 py-3 bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition"
-            >
+            <button className=" h-16  rounded-xl  px-4 py-3 bg-indigo-600 text-white font-[600] md:font-medium shadow hover:bg-indigo-700 transition">
               Calculate My Revenue Recovery
             </button>
             <button className="px-4  py-3 h-16  mt-6 md:mt-0 bg-white rounded-xl hover:bg-gray-50  transition font font-medium border">

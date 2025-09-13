@@ -7,23 +7,22 @@ export default function GridLayout({
     <div className="relative min-h-screen w-full">
       {/* Grid Overlay */}
       <div className="pointer-events-none absolute inset-0 z-50 ">
-        <div className="grid grid-cols-4 h-full">
-          {/* Internal dashed columns */}
-          {[0, 1, 2, 3].map((i) => (
-            <div key={i} className="border-l border-dashed border-amber-400 " />
-          ))}
-        </div>
-
         {/* Left solid border */}
-        <div className="absolute left-0 top-0 h-full border-l border-gray-100" />
+        <div className="absolute left-4 lg:left-22 top-0 h-full border-l border-gray-200" />
         {/* Right solid border */}
-        <div className="absolute right-0 top-0 h-full border-r border-gray-100" />
+        <div className="absolute right-4 lg:right-22 top-0 h-full border-r border-gray-200" />
+        <div className="absolute inset-y-0 left-4 right-4 lg:left-22 lg:right-22 hidden ">
+          {/* Empty divs just to place the grid lines */}
+          <div className="" />
+          <div className="border-l border-dashed border-gray-100" />
+          <div className="border-l border-dashed border-gray-100" />
+          <div className="border-l border-dashed border-gray-100" />
+          {/* The last column stays empty (so we only get 4 gridlines inside) */}
+        </div>
       </div>
 
       {/* Page Content */}
-      <div className="relative z-10  ">
-        {children}
-      </div>
+      <div className="relative z-10  ">{children}</div>
     </div>
   );
 }

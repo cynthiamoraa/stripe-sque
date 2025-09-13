@@ -31,7 +31,7 @@ export default function ProgressSteps() {
 
   return (
     <section className="bg-gray-50  px-4 lg:px-22 ">
-      <div className=" pt-9 border-l-2 border-r-2">
+      <div className=" pt-9 ">
         <div className=" mb-6 flex flex-col  items-center justify-center text-center px-4">
           <h1 className="font-bold text-3xl mb-4">
             Find Work → Approve → Invoice → Paid
@@ -50,6 +50,7 @@ export default function ProgressSteps() {
           <div className="flex-1 shadow-2xl">
             <video
               ref={videoRef}
+              poster="/images/sque.png"
               src="https://storage.googleapis.com/sque_storage/videos/Screen%20Recording%202025-08-26%20at%209.28.54%E2%80%AFAM.mov"
               autoPlay
               loop

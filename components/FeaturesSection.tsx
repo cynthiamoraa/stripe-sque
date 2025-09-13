@@ -28,11 +28,8 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section
-      className=" px-4 lg:px-22 py-20 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200  "
-      style={{ clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)" }}
-    >
-      <div className="py-16  border-l-2 border-r-2">
+    <section className=" px-4 lg:px-22 py-20 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200 clip-section-bottom ">
+      <div className="py-16  ">
         <h1 className="text-center p-4 font-bold text-3xl mb-6">
           Trust, Evidence, and Control
         </h1>
@@ -44,7 +41,7 @@ export default function FeaturesSection() {
           </div>
         </div>
         <div className="pt-9  flex justify-center items-center ">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">
+          <button className="px-4 py-2 bg-blue-500 text-white font-[600] md:font-medium rounded-xl shadow hover:bg-blue-600 transition">
             Open Evidence Pack Sample
           </button>
         </div>

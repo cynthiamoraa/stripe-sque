@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     <footer className="bg-gray-50 px-4 lg:px-22 text-gray-500 ">
-      <div className=" border-l-2 border-r-2  py-16">
+      <div className="  py-16">
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;
+  --background: #fff00f
   --foreground: #171717;
   
    
@@ -41,4 +41,31 @@ body {
       background-position: 400% 50%, 400% 50%;
     }
   }
+}
+.clip-section-top {
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+}
+.clip-section-bottom {
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+
+}
+
+@media (min-width: 768px) {
+  /* md */
+  .clip-section-top {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  }
+  .clip-section-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+}
+
+@media (min-width: 1024px) {
+  /* lg */
+  .clip-section-top {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  }
+  .clip-section-bottom {
+   clip-Path: polygon(0 0, 100% 0, 100% 100%,0  80%);
+}
 }

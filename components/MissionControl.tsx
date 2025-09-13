@@ -88,10 +88,9 @@ export default function MissionControl() {
 
   return (
     <section
-      className="relative px-4 lg:px-22 py-30 bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200 "
-      style={{ clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0 100%)" }}
+      className="relative px-4 lg:px-22 py-30  bg-gradient-to-br from-blue-300 via-purple-300 to-fuchsia-200  clip-section-top"
     >
-      <section className="border-l-2 border-r-2  text-black py-20 px-6">
+      <section className="  text-black py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
           {/* Section Header */}
 
@@ -202,7 +201,7 @@ export default function MissionControl() {
                   </ul>
                 )}
 
-                <button className="mt-6 px-4 py-2 text-sm rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition">
+                <button className="mt-6 px-4 py-2 text-sm font-[600] md:font-medium rounded-xl bg-gray-900 text-white hover:bg-gray-800 transition">
                   {step.button}
                 </button>
               </div>
