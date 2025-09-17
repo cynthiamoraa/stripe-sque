@@ -6,9 +6,7 @@ function Hero() {
     <section>
       <div className="w-full grid lg:grid-cols-4 items-stretch h-full   pb-8  px-4 lg:pl-22 lg:pr-0 ">
         <section className="col-span-4 md:col-span-2 flex flex-col gap-6 p-2  ">
-          <div>
-            <span className="bg-black/10 p-1 px-2 rounded-full">2025</span>
-          </div>
+         
           <header className="">
             <h1 className="text-black opacity-[3] font-bold md:font-black  font-serif text-6xl md:text-7xl  ">
               Stop Losing Billable Time You've Already Earned
