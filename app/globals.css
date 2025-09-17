@@ -12,7 +12,10 @@
 }
 
 
-
+html, body {
+  color-scheme: light dark;
+  background-color: #f9fafb; 
+}
 
 
 @theme inline {
