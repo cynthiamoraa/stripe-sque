@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { get } from "@vercel/edge-config";
 
 export const config = {
-  matcher: ["/big-promo"],
+  matcher: ["/:path*"],
 };
 
 export async function middleware(req: NextRequest) {
