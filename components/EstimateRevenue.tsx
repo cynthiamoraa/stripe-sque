@@ -1,4 +1,3 @@
-import HomepageHeroGradient from "./HomepageHeroGradient";
 import FloatingCards from "./FloatingCards";
 
 function EstimateRevenue() {
