@@ -38,26 +38,28 @@ function GradientBadge() {
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen ">
       <AuroraBackground>
         <Nav />
         <Hero />
       </AuroraBackground>
-      <GridLayout >
-      <EstimateRevenue />
-      <ProductFeatureCard />
-      <MissionControl />
-      <HowItWorks />
-      <ProgressSteps />
-      <BuiltFor />
+      <div className="bg-gray-50">
+        <GridLayout>
+          <EstimateRevenue />
+          <ProductFeatureCard />
+          <MissionControl />
+          <HowItWorks />
+          <ProgressSteps />
+          <BuiltFor />
 
-      <EnterpriseSection />
-      <FeaturesSection />
-      <BillingSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
-      </GridLayout>
+          <EnterpriseSection />
+          <FeaturesSection />
+          <BillingSection />
+          <FAQSection />
+          <ContactSection />
+          <Footer />
+        </GridLayout>
+      </div>
     </main>
   );
 }
