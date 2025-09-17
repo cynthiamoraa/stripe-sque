@@ -12,7 +12,12 @@ function Nav() {
       <div className="mx-auto px-2 md:px-8 py-3  flex items-center justify-between  lg:justify-start ">
         {/* Logo */}
         <div className="flex items-center space-x-3 pr-8">
-          <Image src={Logo} alt="Sque Logo" width={44} height={38} />
+          <img
+            src="/Sque_icon_universal.svg"
+            alt="Sque Logo"
+            width={44}
+            height={38}
+          />
           <Link href="#home" className="font-semibold tracking-tight text-lg">
             Sque
           </Link>

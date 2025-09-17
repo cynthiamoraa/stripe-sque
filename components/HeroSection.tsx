@@ -1,4 +1,4 @@
-import HomepageHeroGradient from "./HomepageHeroGradient";
+
 
 function Hero() {
 

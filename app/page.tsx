@@ -7,7 +7,6 @@ import { useState } from "react";
 import DOMPurify from "dompurify";
 import Nav from "@/components/Navbar";
 import Hero from "@/components/HeroSection";
-import HomepageHeroGradient from "@/components/HomepageHeroGradient";
 import  Footer from "@/components/Footer";
 import EstimateRevenue from "@/components/EstimateRevenue";
 import ProductFeatureCard from "@/components/CTA";
@@ -23,6 +22,7 @@ import GridLayout from "@/components/GridLayout";
 import { AuroraBackground } from "@/components/ui/shadcn-io/aurora-background";
 import MissionControl from "@/components/MissionControl";
 import BuiltFor from "@/components/BuiltFor";
+import MaintenancePage from "./maintenance/page";
 
 function GradientBadge() {
   return (

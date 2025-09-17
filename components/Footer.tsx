@@ -21,7 +21,12 @@ function Footer() {
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center gap-2">
-              <Image src={Logo} alt="Sque Logo" width={34} height={36} />
+              <img
+                src="/Sque_icon_universal.svg"
+                alt="Sque Logo"
+                width={34}
+                height={36}
+              />
               <span className="text-xl font-bold">Sque</span>
             </div>
             <p className="text-black/70 max-w-md">

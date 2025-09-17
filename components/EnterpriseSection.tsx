@@ -41,7 +41,7 @@ export default function EnterpriseFeature() {
       <div className="relative w-full  mx-auto pt-18  overflow-hidden p-8 ">
         {/* Card Content */}
         <h1 className="text-center text-3xl p-6 mb-8 font-bold">
-          Works With Your Stack
+           Works With Your Stack
         </h1>
         <AnimatePresence mode="wait">
           <motion.div
