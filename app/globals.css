@@ -11,9 +11,7 @@
 
 
 
-.aurora-invert {
-  filter: invert(1);
-}
+
 
 html, body {
   color-scheme: light dark;

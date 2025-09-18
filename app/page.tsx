@@ -39,10 +39,13 @@ function GradientBadge() {
 export default function Page() {
   return (
     <main className="min-h-screen ">
-      <AuroraBackground>
-        <Nav />
-        <Hero />
-      </AuroraBackground>
+      <div className="light">
+        <AuroraBackground>
+          <Nav />
+          <Hero />
+        </AuroraBackground>
+      </div>
+
       <div className="bg-gray-50">
         <GridLayout>
           <EstimateRevenue />
