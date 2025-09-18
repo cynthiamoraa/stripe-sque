@@ -7,10 +7,13 @@
   --dark-gradient: none;
   --white-gradient: none;
   
-   
+   }
 
+
+
+.aurora-invert {
+  filter: invert(1);
 }
-
 
 html, body {
   color-scheme: light dark;
@@ -23,6 +26,15 @@ html, body {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+    --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+    to {
+      background-position: 400% 50%, 400% 50%;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,17 +51,7 @@ body {
 
 }
 
-@theme inline {
-  --animate-aurora: aurora 60s linear infinite;
-  @keyframes aurora {
-    from {
-      background-position: 50% 50%, 50% 50%;
-    }
-    to {
-      background-position: 400% 50%, 400% 50%;
-    }
-  }
-}
+
 .clip-section-top {
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
 }
