@@ -33,7 +33,7 @@ export default function ProgressSteps() {
     <section className="bg-gray-50  px-4 lg:px-22 ">
       <div className=" pt-9 ">
         <div className=" mb-6 flex flex-col  items-center justify-center text-center px-4">
-          <h1 className="font-bold text-3xl mb-4">
+          <h1 className="font-bold text-3xl text-black mb-4">
             Find Work → Approve → Invoice → Paid
           </h1>
           <p className="text-gray-700 max-w-2xl">
