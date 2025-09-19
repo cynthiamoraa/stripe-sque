@@ -20,6 +20,7 @@ const config = {
       },
     },
   },
+  safelist: ["invert", "filter", "blur-[10px]"],
 };
 
 export default config;
